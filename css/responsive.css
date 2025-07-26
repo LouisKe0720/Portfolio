@@ -74,8 +74,24 @@
     display: flex;
   }
   
-  /* Mobile menu open state - transform nav to scrolled style */
-  .top-nav.mobile-open {
+  /* Mobile navigation scrolled state - same as desktop */
+  .top-nav.scrolled {
+    top: 0;
+    width: 100vw;
+    border-radius: 0;
+    left: 0;
+    transform: none;
+    padding: 16px 0;
+  }
+  
+  .top-nav.scrolled .nav-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  /* Mobile menu open state - inherit scrolled styles when applicable */
+  .top-nav.mobile-open:not(.scrolled) {
     top: 0;
     width: 100vw;
     border-radius: 0;
@@ -83,7 +99,7 @@
     transform: none;
   }
   
-  .top-nav.mobile-open .nav-content {
+  .top-nav.mobile-open:not(.scrolled) .nav-content {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;

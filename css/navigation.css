@@ -178,6 +178,13 @@
   border-top: none;
 }
 
+/* Mobile dropdown for scrolled navigation */
+.top-nav.scrolled .mobile-dropdown {
+  border-radius: 0;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+}
+
 /* Mobile navigation links */
 .mobile-nav-links {
   list-style: none;
