@@ -1,0 +1,226 @@
+/**
+ * ===== RESPONSIVE STYLES =====
+ * Media queries and responsive design for different screen sizes
+ */
+
+/* Tablet and Mobile Responsive Design (1024px and below) */
+@media (max-width: 1024px) {
+  /* Container adjustments for smaller screens */
+  .container {
+    padding: 90px 15px 30px;
+  }
+  
+  /* Push content below hero section */
+  section:nth-child(2) {
+    margin-top: 60vh;
+  }
+  
+  /* Navigation bar adjustments */
+  .top-nav {
+    padding: 16px 15px;
+    width: calc(100vw - 30px);
+    top: 15px;
+  }
+  
+  /* Scrolled navigation state */
+  .top-nav.scrolled {
+    width: 100vw;
+    padding: 16px 0;
+    left: 0;
+    top: 0;
+    border-radius: 0;
+    transform: none;
+  }
+  
+  .top-nav.scrolled .nav-content {
+    padding: 0 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  /* Navigation content adjustments */
+  .nav-content {
+    gap: 15px;
+    padding: 0 20px;
+  }
+  
+  .nav-brand {
+    font-size: 1.1rem;
+  }
+  
+  /* Navigation controls adjustments */
+  .nav-controls {
+    gap: 10px;
+  }
+  
+  .dark-mode-toggle {
+    width: 35px;
+    height: 35px;
+    padding: 6px;
+  }
+  
+  .sun-icon,
+  .moon-icon {
+    font-size: 1rem;
+  }
+  
+  /* Hide desktop navigation links */
+  .nav-links {
+    display: none;
+  }
+  
+  /* Show hamburger menu */
+  .mobile-menu-toggle {
+    display: flex;
+  }
+  
+  /* Mobile menu open state - transform nav to scrolled style */
+  .top-nav.mobile-open {
+    top: 0;
+    width: 100vw;
+    border-radius: 0;
+    left: 0;
+    transform: none;
+  }
+  
+  .top-nav.mobile-open .nav-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  /* Show mobile dropdown when menu is open */
+  .top-nav.mobile-open .mobile-dropdown {
+    display: block;
+  }
+  
+  /* Hamburger animation to X when menu is open */
+  .top-nav.mobile-open .mobile-menu-toggle span:nth-child(1) {
+    transform: rotate(-45deg) translate(-6px, 6px);
+  }
+  
+  .top-nav.mobile-open .mobile-menu-toggle span:nth-child(2) {
+    opacity: 0;
+  }
+  
+  .top-nav.mobile-open .mobile-menu-toggle span:nth-child(3) {
+    transform: rotate(45deg) translate(-6px, -6px);
+  }
+  
+  /* Content spacing adjustments */
+  header {
+    padding: 40px 20px 30px;
+    margin-bottom: 40px;
+  }
+  
+  /* Hero section adjustments */
+  section:first-child {
+    min-height: 60vh;
+    width: 100vw;
+    left: 0;
+    right: 0;
+    top: 0;
+    position: absolute;
+    z-index: -1;
+    padding: 90px 0 0 0;
+    border-radius: 0 0 80% 80% / 0 0 120px 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  /* General section spacing */
+  section {
+    padding: 30px 0;
+    margin-bottom: 40px;
+  }
+  
+  /* Content cards padding adjustment */
+  #projects ul li,
+  #experience ul li,
+  #contact ul li {
+    padding: 24px;
+  }
+  
+  /* Footer spacing */
+  footer {
+    padding: 30px 15px;
+    margin-top: 40px;
+  }
+}
+
+/* Mobile Responsive Design (480px and below) */
+@media (max-width: 480px) {
+  /* Container adjustments for mobile */
+  .container {
+    padding: 80px 10px 20px;
+  }
+  
+  /* Adjust hero section spacing for mobile */
+  section:nth-child(2) {
+    margin-top: 50vh;
+  }
+  
+  /* Compact navigation for mobile */
+  .top-nav {
+    padding: 12px 10px;
+    width: calc(100vw - 20px);
+    top: 10px;
+  }
+  
+  .top-nav.scrolled {
+    width: 100vw;
+    padding: 12px 0;
+  }
+  
+  /* Mobile navigation content */
+  .nav-content {
+    gap: 10px;
+    padding: 0 15px;
+    justify-content: space-between;
+  }
+  
+  /* Smaller brand text on mobile */
+  .nav-brand {
+    font-size: 1rem;
+  }
+  
+  /* Mobile navigation controls */
+  .nav-controls {
+    gap: 8px;
+  }
+  
+  .dark-mode-toggle {
+    width: 32px;
+    height: 32px;
+    padding: 4px;
+  }
+  
+  .sun-icon,
+  .moon-icon {
+    font-size: 0.9rem;
+  }
+  
+  /* Compact hero section for mobile */
+  section:first-child {
+    min-height: 50vh;
+    padding: 80px 0 0 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    border-radius: 0 0 70% 70% / 0 0 100px 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  /* Smaller content cards for mobile */
+  #projects ul li,
+  #experience ul li,
+  #contact ul li {
+    padding: 20px;
+    font-size: 1rem;
+  }
+}

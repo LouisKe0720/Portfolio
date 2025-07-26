@@ -1,0 +1,138 @@
+/**
+ * ===== DARK MODE THEME =====
+ * Dark theme colors and overrides
+ */
+
+/* Dark mode styles */
+.dark-mode {
+  background: #0f172a;
+  color: #f1f5f9;
+}
+
+/* Dark mode navigation */
+.dark-mode .top-nav {
+  background: rgba(15, 23, 42, 0.95);
+  border: 1px solid rgba(148, 163, 184, 0.2);
+  box-shadow: 
+    0 8px 32px rgba(0, 0, 0, 0.4),
+    0 0 0 1px rgba(148, 163, 184, 0.1),
+    0 0 20px rgba(255, 255, 255, 0.2),
+    0 0 40px rgba(255, 255, 255, 0.1),
+    0 0 80px rgba(255, 255, 255, 0.05);
+}
+
+.dark-mode .top-nav.scrolled {
+  background: rgba(15, 23, 42, 0.98);
+  border-bottom: 1px solid rgba(148, 163, 184, 0.2);
+  box-shadow: 
+    0 4px 20px rgba(0, 0, 0, 0.4),
+    0 0 0 1px rgba(148, 163, 184, 0.1),
+    0 0 15px rgba(255, 255, 255, 0.15),
+    0 0 30px rgba(255, 255, 255, 0.08),
+    0 0 60px rgba(255, 255, 255, 0.04);
+}
+
+.dark-mode .nav-brand {
+  color: #f1f5f9;
+}
+
+.dark-mode .nav-brand:hover {
+  color: #e2e8f0;
+}
+
+.dark-mode .nav-links a {
+  color: #cbd5e1;
+}
+
+.dark-mode .nav-links a:hover,
+.dark-mode .nav-links a.active {
+  color: #60a5fa;
+}
+
+/* Dark mode mobile menu */
+.dark-mode .mobile-menu-toggle span {
+  background: #f1f5f9;
+}
+
+.dark-mode .mobile-dropdown {
+  background: rgba(15, 23, 42, 0.95);
+  border: 1px solid rgba(148, 163, 184, 0.2);
+  border-top: none;
+  box-shadow: 
+    0 8px 32px rgba(0, 0, 0, 0.4),
+    0 0 0 1px rgba(148, 163, 184, 0.1),
+    0 0 15px rgba(255, 255, 255, 0.1),
+    0 0 30px rgba(255, 255, 255, 0.05);
+}
+
+.dark-mode .mobile-nav-links a {
+  color: #cbd5e1;
+}
+
+.dark-mode .mobile-nav-links a:hover,
+.dark-mode .mobile-nav-links a.active {
+  color: #60a5fa;
+}
+
+/* Dark mode hero section */
+.dark-mode section:first-child {
+  background: linear-gradient(135deg, #020617 0%, #0f172a 50%, #1e293b 100%);
+}
+
+.dark-mode h1 {
+  color: #f1f5f9;
+}
+
+.dark-mode header p {
+  color: #cbd5e1;
+}
+
+/* Dark mode content */
+.dark-mode h2 {
+  color: #f1f5f9;
+}
+
+.dark-mode p {
+  color: #94a3b8;
+}
+
+.dark-mode strong {
+  color: #e2e8f0;
+}
+
+.dark-mode a {
+  color: #60a5fa;
+}
+
+.dark-mode a:hover {
+  color: #3b82f6;
+}
+
+/* Dark mode components */
+.dark-mode #projects ul li,
+.dark-mode #experience ul li,
+.dark-mode #contact ul li {
+  background: #1e293b;
+  border-left-color: #60a5fa;
+  color: #cbd5e1;
+}
+
+.dark-mode #experience ul li {
+  border-left-color: #34d399;
+}
+
+.dark-mode #contact ul li {
+  border-left-color: #fbbf24;
+}
+
+.dark-mode #projects ul li:hover,
+.dark-mode #experience ul li:hover,
+.dark-mode #contact ul li:hover {
+  background: #334155;
+}
+
+/* Dark mode footer */
+.dark-mode footer {
+  color: #64748b;
+  border-top: 1px solid rgba(148, 163, 184, 0.2);
+}

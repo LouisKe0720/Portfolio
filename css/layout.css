@@ -1,0 +1,84 @@
+/**
+ * ===== LAYOUT STYLES =====
+ * Main container, sections, and layout structure
+ */
+
+/* Main container for all content */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 120px 20px 40px;
+  position: relative;
+  z-index: 1;
+}
+
+/* Header section styling */
+header {
+  text-align: center;
+  padding: 60px 40px 40px;
+  margin-bottom: 60px;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Hero description text */
+header p {
+  font-size: clamp(1rem, 2.5vw, 1.25rem);
+  color: #f8fafc;
+  max-width: 600px;
+  margin: 0 auto;
+  font-weight: 400;
+  line-height: 1.6;
+  letter-spacing: -0.01em;
+}
+
+/* General section styling with animation setup */
+section {
+  padding: 40px 0;
+  margin-bottom: 60px;
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.8s ease;
+}
+
+/* Push content below hero section */
+section:nth-child(2) {
+  margin-top: 80vh;
+}
+
+/* ===== HERO SECTION STYLES ===== */
+/* Full-screen hero background with curved bottom */
+section:first-child {
+  background: linear-gradient(135deg, #0f172a 0%, #1e293b 50%, #334155 100%);
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 120px 0 0 0;
+  margin-bottom: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: -1;
+  border-radius: 0 0 100% 100% / 0 0 200px 200px;
+  box-shadow: 0 10px 40px rgba(15, 23, 42, 0.4);
+}
+
+/* Section animation when in view */
+section.animate-in {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Footer styles */
+footer {
+  text-align: center;
+  padding: 40px 20px;
+  color: #6b7280;
+  border-top: 1px solid #e5e7eb;
+  margin-top: 60px;
+}

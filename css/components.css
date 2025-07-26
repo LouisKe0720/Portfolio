@@ -1,0 +1,44 @@
+/**
+ * ===== COMPONENT STYLES =====
+ * Reusable components like cards, lists, and interactive elements
+ */
+
+/* Grid layout for project, experience, and contact lists */
+#projects ul,
+#experience ul,
+#contact ul {
+  list-style: none;
+  display: grid;
+  gap: 24px;
+}
+
+/* Card styling for content items */
+#projects ul li,
+#experience ul li,
+#contact ul li {
+  background: #f9fafb;
+  padding: 30px;
+  border-radius: 12px;
+  border-left: 4px solid #3b82f6;
+  transition: transform 0.2s ease;
+  font-size: 1.1rem;
+  line-height: 1.75;
+  letter-spacing: -0.01em;
+  font-weight: 400;
+}
+
+/* Card hover effect */
+#projects ul li:hover,
+#experience ul li:hover,
+#contact ul li:hover {
+  transform: translateY(-2px);
+}
+
+/* Color coding for different sections */
+#experience ul li {
+  border-left-color: #10b981; /* Green for experience */
+}
+
+#contact ul li {
+  border-left-color: #f59e0b; /* Orange for contact */
+}

@@ -1,0 +1,21 @@
+/*
+ ===== MAIN STYLESHEET =====
+*/
+
+/* Base styles - foundational CSS */
+@import url('./base.css');
+
+/* Layout styles - main structure */
+@import url('./layout.css');
+
+/* Navigation styles - nav bar and menus */
+@import url('./navigation.css');
+
+/* Component styles - reusable components */
+@import url('./components.css');
+
+/* Dark mode theme */
+@import url('./dark-mode.css');
+
+/* Responsive styles - media queries */
+@import url('./responsive.css');
