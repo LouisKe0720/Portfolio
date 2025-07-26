@@ -23,8 +23,10 @@
 .top-nav.scrolled {
   top: 0;
   width: 100vw;
+  left: 50%;
+  transform: translateX(-50%);
   border-radius: 0;
-  padding: 35px 0;
+  padding: 20px 0;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
   border-bottom: 1px solid rgba(0, 0, 0, 0.08);
 }
@@ -35,7 +37,7 @@
   padding: 0 40px;
 }
 
-/* Navigation content container */
+/* Navigation content container - always centered */
 .nav-content {
   display: flex;
   align-items: center;
@@ -43,6 +45,8 @@
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 40px;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 /* Brand/logo styling */

@@ -17,7 +17,7 @@
   
   /* Navigation bar adjustments - maintain desktop animation style */
   .top-nav {
-    padding: 20px 15px;
+    padding: 20px 0;
     width: min(1200px, calc(100vw - 30px));
     top: 15px;
     left: 50%;
@@ -26,7 +26,7 @@
     transition: all 0.4s ease;
   }
   
-  /* Scrolled navigation state - same transition as desktop */
+  /* Scrolled navigation state - background expands, content stays centered */
   .top-nav.scrolled {
     top: 0;
     width: 100vw;
@@ -42,10 +42,14 @@
     margin: 0 auto;
   }
   
-  /* Navigation content adjustments */
+  /* Navigation content adjustments - always centered */
   .nav-content {
     gap: 15px;
     padding: 0 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+    box-sizing: border-box;
   }
   
   .nav-brand {
@@ -94,7 +98,7 @@
     margin: 0 auto;
   }
   
-  /* Mobile menu open state - inherit desktop animation behavior */
+  /* Mobile menu open state - background expands, content stays centered */
   .top-nav.mobile-open:not(.scrolled) {
     top: 0;
     width: 100vw;
@@ -198,9 +202,9 @@
     margin-top: 50vh;
   }
   
-  /* Compact navigation for mobile - maintain desktop animation */
+  /* Compact navigation for mobile - background expands, content centered */
   .top-nav {
-    padding: 16px 10px;
+    padding: 16px 0;
     width: min(1200px, calc(100vw - 20px));
     top: 10px;
     left: 50%;
@@ -218,11 +222,15 @@
     padding: 12px 0;
   }
   
-  /* Mobile navigation content */
+  /* Mobile navigation content - always centered */
   .nav-content {
     gap: 10px;
     padding: 0 15px;
     justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+    box-sizing: border-box;
   }
   
   /* Smaller brand text on mobile */
