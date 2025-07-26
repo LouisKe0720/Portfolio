@@ -15,21 +15,25 @@
     margin-top: 60vh;
   }
   
-  /* Navigation bar adjustments */
+  /* Navigation bar adjustments - maintain desktop animation style */
   .top-nav {
-    padding: 16px 15px;
-    width: calc(100vw - 30px);
+    padding: 20px 15px;
+    width: min(1200px, calc(100vw - 30px));
     top: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 30px;
+    transition: all 0.4s ease;
   }
   
-  /* Scrolled navigation state */
+  /* Scrolled navigation state - same transition as desktop */
   .top-nav.scrolled {
-    width: 100vw;
-    padding: 16px 0;
-    left: 0;
     top: 0;
+    width: 100vw;
+    left: 50%;
+    transform: translateX(-50%);
     border-radius: 0;
-    transform: none;
+    padding: 16px 0;
   }
   
   .top-nav.scrolled .nav-content {
@@ -74,29 +78,29 @@
     display: flex;
   }
   
-  /* Mobile navigation scrolled state - same as desktop */
+  /* Mobile navigation scrolled state - same transition as desktop */
   .top-nav.scrolled {
     top: 0;
     width: 100vw;
+    left: 50%;
+    transform: translateX(-50%);
     border-radius: 0;
-    left: 0;
-    transform: none;
     padding: 16px 0;
   }
   
   .top-nav.scrolled .nav-content {
+    padding: 0 20px;
     max-width: 1200px;
     margin: 0 auto;
-    padding: 0 20px;
   }
   
-  /* Mobile menu open state - inherit scrolled styles when applicable */
+  /* Mobile menu open state - inherit desktop animation behavior */
   .top-nav.mobile-open:not(.scrolled) {
     top: 0;
     width: 100vw;
+    left: 50%;
+    transform: translateX(-50%);
     border-radius: 0;
-    left: 0;
-    transform: none;
   }
   
   .top-nav.mobile-open:not(.scrolled) .nav-content {
@@ -160,8 +164,25 @@
   
   /* Footer spacing */
   footer {
-    padding: 30px 15px;
+    padding: 40px 20px 20px;
     margin-top: 40px;
+  }
+  
+  /* Footer responsive grid */
+  .footer-content {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 30px;
+    margin-bottom: 30px;
+  }
+  
+  /* Footer social adjustments */
+  .footer-social a {
+    width: 40px;
+    height: 40px;
+  }
+  
+  .social-icon {
+    font-size: 1.1rem;
   }
 }
 
@@ -177,15 +198,23 @@
     margin-top: 50vh;
   }
   
-  /* Compact navigation for mobile */
+  /* Compact navigation for mobile - maintain desktop animation */
   .top-nav {
-    padding: 12px 10px;
-    width: calc(100vw - 20px);
+    padding: 16px 10px;
+    width: min(1200px, calc(100vw - 20px));
     top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 30px;
+    transition: all 0.4s ease;
   }
   
   .top-nav.scrolled {
+    top: 0;
     width: 100vw;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 0;
     padding: 12px 0;
   }
   
@@ -238,5 +267,42 @@
   #contact ul li {
     padding: 20px;
     font-size: 1rem;
+  }
+  
+  /* Mobile footer adjustments */
+  footer {
+    padding: 30px 15px 15px;
+    margin-top: 30px;
+  }
+  
+  /* Single column footer on mobile */
+  .footer-content {
+    grid-template-columns: 1fr;
+    gap: 25px;
+    margin-bottom: 25px;
+  }
+  
+  /* Centered footer sections on mobile */
+  .footer-section {
+    text-align: center;
+  }
+  
+  /* Smaller footer typography */
+  .footer-section h3 {
+    font-size: 1.3rem;
+  }
+  
+  .footer-section h4 {
+    font-size: 1rem;
+  }
+  
+  /* Center footer social links */
+  .footer-social {
+    justify-content: center;
+  }
+  
+  .footer-social a {
+    width: 42px;
+    height: 42px;
   }
 }
